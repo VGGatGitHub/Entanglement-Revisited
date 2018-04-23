@@ -11905,7 +11905,7 @@ $$
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Checking the version of PYTHON; we only support &gt; 3.5</span>
@@ -12784,13 +12784,17 @@ If we assume there are hidden variables $\lambda$ and $\theta$ that define all t
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="CHSH-XZ,-ZX-and-ZZ-Graph-">CHSH XZ, ZX and ZZ Graph <a id="section5" /><a class="anchor-link" href="#CHSH-XZ,-ZX-and-ZZ-Graph-">&#182;</a></h2><p>The results graphed above show the expected CHSH values (sinusoidal blue dots), $\langle ZZ \rangle$ expected data which should be the same as $\langle XX \rangle$ (green $\cos$-like line), the $\langle XZ \rangle$ expected data (red $\sin$-like line) and the $\langle ZX \rangle$ expected data (blue anti-$\sin$-like line). The graph also gives lines for the limits at $\pm 2$ (blue) and $\pm 2\sqrt{2}$ (red) for reference. Clearly an additive maximum is achieved for $\langle ZZ \rangle+\langle XX \rangle +\langle XZ \rangle - \langle ZX \rangle$ when $cos(\theta)=sin(\theta)=\frac{\sqrt{2}}{2}$ with the value $2\sqrt{2}$. This happens at $\theta=\pi/4$ and $\theta=5\pi/4$.</p>
+<p>To understand the angular dependence $\cos(\theta+\delta)$ of the four expectation values one can think of the X as y-rotated Z measurement at $\pi/2$ using right-hand oriented triad. 
+Since the choice of Z (X) orientation is arbitrary in an isotropic system $\langle XX \rangle$ is practically $\langle ZZ \rangle$ and thus they both have the $\cos(\theta)$ dependence since the structure of the entangled state and the conservation of the angular momentum enforce aligned AB-result of 1; thus, there is a zero phase shift ($\delta=0$) in the $\cos(\theta+\delta)$. 
+Then to understand the $\langle XZ \rangle$ dependence in $\theta$ one can consider that this is ZZ but the first Z is rotated now at ($\delta=\pi/2$), therefore $\sin(\theta)=\cos(\theta-\pi/2)$. For $\langle ZX \rangle$ the second Z in ZZ is rotated now at ($\delta=\pi/2$) with the result $\cos(\theta+\pi/2)=-\sin(\theta)$. 
+The different sign of $\delta$ for going from Z to X depending on whether it is on the fists or second Z is consistent with the requirement that $\langle XX \rangle$ is same as $\langle ZZ \rangle$.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">CHSH</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
