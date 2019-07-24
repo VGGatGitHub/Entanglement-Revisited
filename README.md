@@ -1,7 +1,6 @@
 # Entanglement Revisited
 
-This was the Hello World tutorial exercise. 
-But now it is about the CHSH inequality and contains my research notes and considerations.
+The files here are about the CHSH inequality and contains my research notes and considerations.
 In particular the classically anticipated individual expectation values \<ZZ\>, \<XX\>, \<XZ\>, and \<ZX\>.
 How are they related to the CHSH inequality from QM point of view. 
 Jupiter notebook for running calculations related to the CHSH inequality on a quantum computer,
